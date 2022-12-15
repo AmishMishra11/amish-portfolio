@@ -32,10 +32,10 @@ function Nav() {
   ];
 
   return (
-    <div className="shadow-md w-full sticky top-0 left-0">
+    <div className="shadow-md w-full sticky top-0 left-0 z-10">
       <div className="md:flex justify-between items-center  h-24  py-4 md:px-10 px-7 bg-gradient-to-r from-violet-500 to-fuchsia-500">
         <div>
-          <img className="h-16 w-16 ml-4" src={Logo} alt="Logo" />
+          <img className="h-16 w-16 ml-4 rounded-full" src={Logo} alt="Logo" />
         </div>
         <div
           onClick={() => setOpen(!open)}

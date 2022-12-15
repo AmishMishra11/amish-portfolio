@@ -49,9 +49,9 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="bg-neutral-800 flex flex-col justify-start items-start w-full p-2"
+      className="bg-backgroundLight flex flex-col justify-start items-start w-full p-2"
     >
-      <div className="text-primary font-head text-[3.75rem] border-b-4 border-[#6B4748] w-full text-left sm:pl-[8rem] md:pl-[12rem]">
+      <div className="text-purpleLight font-head text-[3.75rem] border-b-4 border-border w-full text-left sm:pl-[8rem] md:pl-[12rem]">
         Projects
       </div>
 
@@ -62,28 +62,28 @@ function Projects() {
             className="flex flex-col md:flex-col  xl:flex-row justify-start items-start md:items-center xl:items-end pb-4 md:h-[30rem] xl:h-[20rem]"
           >
             <img
-              className="h-[18rem] md:w-[25rem] xl:w-[22rem] p-1 bg-primary border-1 border-[#F6BFC2] rounded-md "
+              className="h-[18rem] md:w-[25rem] xl:w-[22rem] p-1 bg-purpleDark border-1 border-purpleDark rounded-md "
               src={item.url}
               alt={item.name}
             />
-            <div className="flex flex-col  justify-between items-start p-2 bg-primary rounded-md md:w-[27rem] md:h-[16rem] xl:w-[20rem]  xl:h-[14rem]   ">
-              <div className="text-[2.25rem] font-body text-secondary ">
+            <div className="flex flex-col  justify-between items-start p-2 bg-backgroundDark rounded-md md:w-[27rem] md:h-[16rem] xl:w-[20rem]  xl:h-[14rem]   ">
+              <div className="text-[2.25rem] font-body text-purpleDark ">
                 {item.name}
               </div>
-              <div className="text-[1.25rem] font-medium font-serif text-left">
+              <div className="text-[1.25rem] font-medium font-serif text-left text-white">
                 {item.description}
               </div>
 
               <div className="flex justify-start items-center">
                 <a
-                  className="p-2 m-2 rounded-full w-[5rem] text-center bg-secondary text-white border-2 border-[#6B4748]"
+                  className="p-2 m-2 rounded-full w-[5rem] text-center bg-purpleDark text-black border-2 border-purpleDark hover:bg-[#351D4A] hover:text-purpleLight font-medium"
                   href={item.live}
                   target="_blank"
                 >
                   Live
                 </a>
                 <a
-                  className="p-2 m-2 rounded-full w-[5rem] text-center bg-primary text-secondary border-2 border-[#6B4748]"
+                  className="p-2 m-2 rounded-full w-[5rem] text-center bg-backgoundDark text-border border-2 border-border hover:bg-border hover:text-black"
                   href={item.code}
                   target="_blank"
                 >
