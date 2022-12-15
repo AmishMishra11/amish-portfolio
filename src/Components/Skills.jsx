@@ -24,14 +24,20 @@ function Skills() {
   ];
 
   return (
-    <div className="bg-neutral-800 flex flex-col justify-start items-start w-full p-5">
+    <div
+      id="skills"
+      className="bg-neutral-800 flex flex-col justify-start items-start w-full p-5"
+    >
       <div className="text-primary font-head text-[3.75rem] border-b-4 border-[#6B4748] w-full text-left md:pl-[8rem] xl:pl-[12rem]">
         Skills
       </div>
 
       <div className="flex flex-wrap justify-center items-center p-[2rem] w-full">
         {skill.map((item) => (
-          <div className="flex justify-start items-center h-[5rem] w-[8rem] md:h-[4rem] md:w-[10rem] xl:h-[5rem] xl:w-[20rem] p-2 sm:ml-20">
+          <div
+            key={item.name}
+            className="flex justify-start items-center h-[5rem] w-[8rem] md:h-[4rem] md:w-[10rem] xl:h-[5rem] xl:w-[20rem] p-2 sm:ml-20"
+          >
             <img
               className="h-[4.5rem] w-[4.5rem] p-2 "
               src={item.url}
