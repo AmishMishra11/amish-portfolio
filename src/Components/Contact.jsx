@@ -21,16 +21,16 @@ function Contact() {
           href="https://www.linkedin.com/in/amish-mishra-98b43221a/"
           target="_blank"
         >
-          <BsLinkedin className="h-28 w-28 m-4  text-border p-[1rem] hover:p-[1.5rem]" />
+          <BsLinkedin className="  h-16 w-16  sm:h-20 sm:w-20 md:h-28 md:w-28 md:m-4 m-1  text-border p-[.5rem] md:p-[1rem] hover:p-[1.5rem]" />
         </a>
         <a href="https://twitter.com/The_Scarcastic1" target="_blank">
-          <FaTwitterSquare className="h-28 w-28 m-4  text-border p-[1rem] hover:p-[1.5rem]" />
+          <FaTwitterSquare className="  h-16 w-16  sm:h-20 sm:w-20 md:h-28 md:w-28 md:m-4 m-1  text-border p-[.5rem] md:p-[1rem] hover:p-[1.5rem]" />
         </a>
         <a href="https://github.com/AmishMishra11" target="_blank">
-          <FaGithubSquare className="h-28 w-28 m-4  text-border p-[1rem] hover:p-[1.5rem]" />
+          <FaGithubSquare className="  h-16 w-16  sm:h-20 sm:w-20 md:h-28 md:w-28 md:m-4 m-1  text-border p-[.5rem] md:p-[1rem] hover:p-[1.5rem]" />
         </a>
         <a href="mailto: amishmishra11@gmail.com" target="_blank">
-          <HiMail className="h-28 w-28 m-4  text-border p-[1rem] hover:p-[1.5rem]" />
+          <HiMail className="  h-16 w-16  sm:h-20 sm:w-20 md:h-28 md:w-28 md:m-4 m-1  text-border p-[.5rem] md:p-[1rem] hover:p-[1.5rem]" />
         </a>
       </div>
     </div>
