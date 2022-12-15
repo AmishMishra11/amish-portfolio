@@ -47,14 +47,20 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-neutral-800 flex flex-col justify-start items-start w-full p-2">
+    <div
+      id="projects"
+      className="bg-neutral-800 flex flex-col justify-start items-start w-full p-2"
+    >
       <div className="text-primary font-head text-[3.75rem] border-b-4 border-[#6B4748] w-full text-left sm:pl-[8rem] md:pl-[12rem]">
         Projects
       </div>
 
       <div className="flex flex-wrap justify-between items-center p-[2rem] w-full">
         {project.map((item) => (
-          <div className="flex flex-col md:flex-col  xl:flex-row justify-start items-start md:items-center xl:items-end pb-4 md:h-[30rem] xl:h-[20rem]">
+          <div
+            key={item.name}
+            className="flex flex-col md:flex-col  xl:flex-row justify-start items-start md:items-center xl:items-end pb-4 md:h-[30rem] xl:h-[20rem]"
+          >
             <img
               className="h-[18rem] md:w-[25rem] xl:w-[22rem] p-1 bg-primary border-1 border-[#F6BFC2] rounded-md "
               src={item.url}

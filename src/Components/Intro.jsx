@@ -4,7 +4,10 @@ import photo from "../Assets/photo.jpg";
 
 function Intro() {
   return (
-    <div className="bg-neutral-800 flex justify-center items-center h-[calc(100vh-6rem)]">
+    <div
+      id="intro"
+      className="bg-neutral-800 flex justify-center items-center h-[calc(100vh-6rem)]"
+    >
       <div className="flex flex-col md:flex-row  justify-center items-end">
         <img
           className="rounded-md md:rounded-br-none border-[1rem]  border-[#F6BFC2] max-h-[35vh] md:max-h-[35vh] xl:max-h-[65vh] "
