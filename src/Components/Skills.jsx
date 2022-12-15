@@ -26,9 +26,9 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="bg-neutral-800 flex flex-col justify-start items-start w-full p-5"
+      className="bg-backgroundLight flex flex-col justify-start items-start w-full p-5"
     >
-      <div className="text-primary font-head text-[3.75rem] border-b-4 border-[#6B4748] w-full text-left md:pl-[8rem] xl:pl-[12rem]">
+      <div className="text-primary font-head text-[3.75rem] border-b-4 border-border w-full text-left md:pl-[8rem] xl:pl-[12rem]">
         Skills
       </div>
 

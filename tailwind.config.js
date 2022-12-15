@@ -15,8 +15,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#F6BFC2",
+        primary: "#D367C1",
         secondary: "#6B4748",
+        purpleLight: "#D367C1",
+        purpleDark: "#AB79D6",
+        backgroundLight: "#27272C",
+        backgroundDark: "#1E1C22",
+        border: "#00BBCB",
       },
 
       fontFamily: {
