@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import AMComp from "../Assets/Projects/am-comp.png";
 import Mercart from "../Assets/Projects/mercart.png";
@@ -7,44 +7,57 @@ import Instanic from "../Assets/Projects/instanic.png";
 import Funime from "../Assets/Projects/funime.png";
 
 function Projects() {
-  const project = [
+  const [show, setShow] = useState("All");
+
+  const tags = ["All", "FullStack", "FrontEnd", "VanillaJS"];
+
+  const projects = [
     {
-      name: "AM-Comp",
-      description: "My very own component library made with HTML and CSS.",
-      url: AMComp,
-      live: "https://am-component.netlify.app/",
-      code: "https://github.com/AmishMishra11/AM-Comp",
-    },
-    {
-      name: "Mercart",
-      description: "Marvel based ecommerce store built with react JS.",
-      url: Mercart,
-      live: "https://mercart-react.netlify.app/",
-      code: "https://github.com/AmishMishra11/Mercart-react",
+      name: "Funime",
+      type: "FullStack",
+      description:
+        "Anime Themed Social media app made with react js ​redux-toolkit with Express and Mongo",
+      url: Funime,
+      live: "https://funime-media.netlify.app/",
+      code: "https://github.com/AmishMishra11/funime",
     },
     {
       name: "MCU-Tube",
+      type: "FrontEnd",
       description: "Marvel Based Video Library built with react JS.",
       url: MCUTube,
       live: "https://mcutube.netlify.app/",
       code: "https://github.com/AmishMishra11/MCU-Tube",
     },
     {
+      name: "Mercart",
+      type: "FrontEnd",
+      description: "Marvel based ecommerce store built with react JS.",
+      url: Mercart,
+      live: "https://mercart-react.netlify.app/",
+      code: "https://github.com/AmishMishra11/Mercart-react",
+    },
+    {
       name: "Instanic",
+      type: "FrontEnd",
       description: "A Note Making app built with react JS.",
       url: Instanic,
       live: "https://instanic.netlify.app/",
       code: "https://github.com/AmishMishra11/Instanic",
     },
     {
-      name: "Funime",
-      description:
-        "Anime Themed Social media app made with react js ​redux toolkit and tailwind css",
-      url: Funime,
-      live: "https://funime-media.netlify.app/",
-      code: "https://github.com/AmishMishra11/funime",
+      name: "AM-Comp",
+      type: "VanillaJS",
+      description: "My very own component library made with HTML and CSS.",
+      url: AMComp,
+      live: "https://am-component.netlify.app/",
+      code: "https://github.com/AmishMishra11/AM-Comp",
     },
   ];
+
+  let displayedPorjects = projects;
+  if (show !== "All")
+    displayedPorjects = projects.filter((item) => item.type === show);
 
   return (
     <div
@@ -55,8 +68,22 @@ function Projects() {
         Projects
       </div>
 
+      <div className="flex flex-wrap justify-start items-center p-6">
+        {tags.map((item) => (
+          <div
+            key={item}
+            onClick={() => {
+              setShow(item);
+            }}
+            className="p-2 m-2 rounded-full w-[7rem] text-center bg-purpleDark text-black border-2 border-purpleDark hover:bg-[#351D4A] hover:text-purpleLight font-medium cursor-pointer"
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+
       <div className="flex flex-wrap justify-between items-center p-[2rem] w-full">
-        {project.map((item) => (
+        {displayedPorjects.map((item) => (
           <div
             key={item.name}
             className="flex flex-col md:flex-col  xl:flex-row justify-start items-start md:items-center xl:items-end pb-4 md:h-[30rem] xl:h-[20rem]"

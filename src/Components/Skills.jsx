@@ -14,13 +14,13 @@ function Skills() {
   const skill = [
     { name: "HTML", url: Html },
     { name: "CSS", url: Css },
-    { name: "JavaScript", url: JavaScript },
+    { name: "JS", url: JavaScript },
     { name: "React", url: ReactIcon },
     { name: "Git", url: Git },
     { name: "Tailwind", url: Tailwind },
     { name: "Redux", url: Redux },
-    { name: "Material UI", url: Material },
     { name: "Jest", url: Jest },
+    { name: "Material UI", url: Material },
   ];
 
   return (
