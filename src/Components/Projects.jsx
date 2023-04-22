@@ -18,7 +18,7 @@ function Projects() {
       description:
         "Anime Themed Social media app made with react js ​redux-toolkit with Express and Mongo",
       url: Funime,
-      live: "https://funime-media.netlify.app/",
+      live: "https://funime.vercel.app",
       code: "https://github.com/AmishMishra11/funime",
     },
     {
