@@ -58,7 +58,7 @@ function About() {
               <div className="flex flex-col">
                 <div className="flex flex-col items-start text-white text-[2.75rem] pt-1">
                   <div className="text-border text-xl font-medium">
-                    2022 August - 2023 April
+                    2022 August - 2023 May
                   </div>
                   <div className="font-body text-left text-purpleDark text-[2.25rem]">
                     React Developer
@@ -66,6 +66,17 @@ function About() {
                   <div className="text-border text-xl font-medium">
                     Clientell
                   </div>
+                </div>
+              </div>
+              <div className="flex flex-col pt-16">
+                <div className="flex flex-col items-start text-white text-[2.75rem] pt-1">
+                  <div className="text-border text-xl font-medium">
+                    2022 October - Present
+                  </div>
+                  <div className="font-body text-left text-purpleDark text-[2.25rem]">
+                    FrontEnd Developer
+                  </div>
+                  <div className="text-border text-xl font-medium">AppBrew</div>
                 </div>
               </div>
             </div>
